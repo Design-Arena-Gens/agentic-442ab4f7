@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #090d12;
+  --fg: #e6f0ff;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  color: var(--fg);
+  background:
+    radial-gradient(1200px 800px at 10% -20%, rgba(0, 209, 178, 0.15), transparent),
+    radial-gradient(1000px 600px at 110% 10%, rgba(0, 209, 178, 0.12), transparent),
+    #090d12;
+}
+
+.container-grid {
+  background-image: theme('backgroundImage.grid');
+  background-size: 24px 24px;
+}
+
+.section {
+  @apply py-20 md:py-28;
+}
+
+.max-w-screen {
+  max-width: 1400px;
+}
